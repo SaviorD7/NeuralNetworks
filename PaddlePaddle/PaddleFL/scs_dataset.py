@@ -14,11 +14,6 @@ MD5 = 'd4accdce7a25600298819f8e28e8d593'
 TRAIN_DATA = None
 TEST_DATA = None
 
-
-
-
-
-
 def load_data(filename, feature_num=9, ratio=0.8):
     global TRAIN_DATA, TEST_DATA
     if TRAIN_DATA is not None and TEST_DATA is not None:

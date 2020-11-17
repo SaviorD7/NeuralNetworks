@@ -1,9 +1,6 @@
-
 from __future__ import print_function
 import numpy as np
 import six
-import os
-import paddle.dataset.common
 
 
 __all__ = ['train', 'test']
