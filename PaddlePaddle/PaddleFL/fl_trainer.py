@@ -31,15 +31,15 @@ trainer.start(place)
 
 test_program = trainer._main_program.clone(for_test=True)
 
-file_name = 'data/scs_part{}.data'.format(trainer_id)
+file_name = 'data/car_part{}.data'.format(trainer_id)
 
 train_reader = paddle.batch(
     paddle.reader.shuffle(
-        scs_dataset.train(file_name), buf_size=5000),
+        car_dataset.train(file_name), buf_size=5000),
     batch_size=32)
-test_reader = paddle.batch(scs_dataset.test(file_name), batch_size=32)
+test_reader = paddle.batch(car_dataset.test(file_name), batch_size=32)
 
-x = fluid.layers.data(name='x', shape=[1, 7], dtype='float32')
+x = fluid.layers.data(name='x', shape=[1, 14], dtype='float32')
 label = fluid.layers.data(name='label', shape=[1], dtype='int64')
 feeder = fluid.DataFeeder(feed_list=[x, label], place=fluid.CPUPlace())
 
