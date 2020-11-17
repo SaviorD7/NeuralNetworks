@@ -39,7 +39,7 @@ class Model(object):
 
 
 model = Model()
-model.scs_network()
+model.car_network()
 
 job_generator = JobGenerator()
 optimizer = fluid.optimizer.SGD(learning_rate=0.001)
