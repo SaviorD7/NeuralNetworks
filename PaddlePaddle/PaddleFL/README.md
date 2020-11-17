@@ -19,5 +19,5 @@ You also can make your own data divider or divide your data manually.
 
 ## [HELP]
 If you need some help you can write me:
-* telegram: [@saviord](t.me/saviord7)
+* telegram: [@saviord7](t.me/saviord7)
 * vk: [@saviord7](https://vk.com/saviord7)
